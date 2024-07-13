@@ -14,8 +14,8 @@
 #define OWSScreenWidth   [UIScreen mainScreen].bounds.size.width
 #define OWSScreenHeight  [UIScreen mainScreen].bounds.size.height
 
-#define OWSGlobalBottomToolBarHeight  80
-#define OWSGlobalBottomToolBarLeadingSpace  15
+#define OWSGlobalBottomToolBarHeight  60
+#define OWSGlobalBottomToolBarLeadingSpace  60
 
 
 #endif /* OWSConstants_h */

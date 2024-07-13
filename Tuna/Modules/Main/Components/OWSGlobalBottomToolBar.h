@@ -10,7 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OWSGlobalBottomToolBar : OWSBaseView
-
+@property (copy, nonatomic) void(^selectedTap)(NSInteger index);
+- (void)changeStatusForIndex:(NSInteger)index;
 @end
 
 NS_ASSUME_NONNULL_END

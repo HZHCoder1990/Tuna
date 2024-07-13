@@ -35,7 +35,9 @@
     [self addChildViewController:gameViewController];
     [self addChildViewController:profileViewController];
     
-    self.selectedIndex = 1;
+    // 默认选中
+    self.selectedIndex = 0;
+    [self.bottomToolBar changeStatusForIndex:0];
     
     [self.view addSubview:self.bottomToolBar];
     [self.bottomToolBar mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -44,6 +46,13 @@
         make.height.equalTo(@(OWSGlobalBottomToolBarHeight));
     }];
 
+    // 点击事件监听
+    @weakify(self);
+    [self.bottomToolBar setSelectedTap:^(NSInteger index) {
+        @strongify(self);
+        self.selectedIndex = index;
+        [self.bottomToolBar changeStatusForIndex:index];
+    }];
 }
 
 - (OWSGlobalBottomToolBar *)bottomToolBar {

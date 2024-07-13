@@ -16,11 +16,11 @@
 		0442AD532C40E06E00B5FF4B /* OWSBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AD522C40E06E00B5FF4B /* OWSBaseView.m */; };
 		0442AD562C40E34D00B5FF4B /* OWSGlobalBottomToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AD552C40E34D00B5FF4B /* OWSGlobalBottomToolBar.m */; };
 		0442AD622C411CB800B5FF4B /* OWSRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AD612C411CB800B5FF4B /* OWSRotationView.m */; };
-		0442AD6B2C411F0700B5FF4B /* OWSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AD6A2C411F0700B5FF4B /* OWSScrollView.m */; };
 		0442AD6E2C41208F00B5FF4B /* OWSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AD6D2C41208F00B5FF4B /* OWSHomeViewController.m */; };
 		0442AD712C41209800B5FF4B /* OWSGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AD702C41209800B5FF4B /* OWSGameViewController.m */; };
 		0442AD742C4120A100B5FF4B /* OWSProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AD732C4120A100B5FF4B /* OWSProfileViewController.m */; };
 		CD8BDD9A409BAEA990F0A5BD /* libPods-Tuna.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDB4FD3BD0E307FA90C33BD /* libPods-Tuna.a */; };
+		EF57E3462C429F4200B2EA89 /* OWSToolBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF57E3452C429F4200B2EA89 /* OWSToolBarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,6 @@
 		0442AD552C40E34D00B5FF4B /* OWSGlobalBottomToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWSGlobalBottomToolBar.m; sourceTree = "<group>"; };
 		0442AD602C411CB800B5FF4B /* OWSRotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSRotationView.h; sourceTree = "<group>"; };
 		0442AD612C411CB800B5FF4B /* OWSRotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWSRotationView.m; sourceTree = "<group>"; };
-		0442AD692C411F0700B5FF4B /* OWSScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSScrollView.h; sourceTree = "<group>"; };
-		0442AD6A2C411F0700B5FF4B /* OWSScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWSScrollView.m; sourceTree = "<group>"; };
 		0442AD6C2C41208F00B5FF4B /* OWSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSHomeViewController.h; sourceTree = "<group>"; };
 		0442AD6D2C41208F00B5FF4B /* OWSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWSHomeViewController.m; sourceTree = "<group>"; };
 		0442AD6F2C41209800B5FF4B /* OWSGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSGameViewController.h; sourceTree = "<group>"; };
@@ -54,6 +52,8 @@
 		1FDB4FD3BD0E307FA90C33BD /* libPods-Tuna.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tuna.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C725F0975250C73B510725 /* Pods-Tuna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tuna.debug.xcconfig"; path = "Target Support Files/Pods-Tuna/Pods-Tuna.debug.xcconfig"; sourceTree = "<group>"; };
 		CAAD258F51D99763589D35E0 /* Pods-Tuna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tuna.release.xcconfig"; path = "Target Support Files/Pods-Tuna/Pods-Tuna.release.xcconfig"; sourceTree = "<group>"; };
+		EF57E3442C429F4200B2EA89 /* OWSToolBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSToolBarItem.h; sourceTree = "<group>"; };
+		EF57E3452C429F4200B2EA89 /* OWSToolBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWSToolBarItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +142,6 @@
 				0442AD482C40DDEF00B5FF4B /* OWSBaseViewController.m */,
 				0442AD512C40E06E00B5FF4B /* OWSBaseView.h */,
 				0442AD522C40E06E00B5FF4B /* OWSBaseView.m */,
-				0442AD692C411F0700B5FF4B /* OWSScrollView.h */,
-				0442AD6A2C411F0700B5FF4B /* OWSScrollView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -203,6 +201,8 @@
 			children = (
 				0442AD542C40E34D00B5FF4B /* OWSGlobalBottomToolBar.h */,
 				0442AD552C40E34D00B5FF4B /* OWSGlobalBottomToolBar.m */,
+				EF57E3442C429F4200B2EA89 /* OWSToolBarItem.h */,
+				EF57E3452C429F4200B2EA89 /* OWSToolBarItem.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 				0442AD6E2C41208F00B5FF4B /* OWSHomeViewController.m in Sources */,
 				0442AD742C4120A100B5FF4B /* OWSProfileViewController.m in Sources */,
 				0442AD492C40DDEF00B5FF4B /* OWSBaseViewController.m in Sources */,
-				0442AD6B2C411F0700B5FF4B /* OWSScrollView.m in Sources */,
+				EF57E3462C429F4200B2EA89 /* OWSToolBarItem.m in Sources */,
 				0442AD712C41209800B5FF4B /* OWSGameViewController.m in Sources */,
 				0442AD4E2C40DECD00B5FF4B /* OWSMainViewController.m in Sources */,
 			);
